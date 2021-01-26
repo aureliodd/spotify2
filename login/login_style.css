@@ -1,0 +1,114 @@
+body{
+    margin: auto;
+}
+/*header*/
+header{
+    height:100px;
+    background-color: #7092BE;
+    margin-bottom: 150px;
+}
+
+img{
+    max-height:100px;
+}
+
+/*form login*/
+#titolo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 2.2em;
+}
+
+main{
+    font-family: 'Rubik', sans-serif;
+    margin:auto;
+    width: 600px;;
+}
+
+#login{
+    border: 3px solid rgb(69, 138, 230);;
+    background-color: rgb(192, 211, 236);
+    margin:auto;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#ricordami{
+    display:inline-block;
+    width: 100%;
+}
+
+label{
+    padding: 5px;
+}
+
+.credentials{
+    display: block;
+    padding: 8px;
+    font-size: 16px;
+    border:none;
+    border-radius: 5px;
+    width: 500px;
+    margin:5px;
+
+}
+
+#submit{
+    align-content: center;
+    background-color: #7092BE;
+    border: none;
+    border-radius: 7px;
+    width: 100%;
+    color: white;
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.problems{
+    margin: 0;
+    padding: 10px;
+    border-radius: 10px;
+    width: 500px;
+    background-color: rgba(243, 116, 116,0.7);
+    color: red;
+}
+
+#remember_me{
+    text-align: right;
+}
+
+/*registrazione*/
+#signup{
+    margin-top: 0.3em;
+    text-align: right;
+}
+
+a{
+    color: rgb(152, 182, 221);
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+}
+
+a:visited{
+    color: rgb(152, 182, 221);
+}
+
+/*modificatori*/
+
+.no{
+    background-color: rgba(243, 116, 116,0.7);
+}
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}

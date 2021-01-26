@@ -1,0 +1,378 @@
+body{
+    margin:auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.no-scroll{
+    overflow: hidden;
+}
+
+/*header*/
+header{
+    width:100%;
+    position: fixed;
+    background-color: #7092BE;
+    z-index: 1;
+}
+
+header img{
+    max-height:100px;
+    padding-left:300px;
+}
+
+/*navbar*/
+nav{
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100%;
+    width:300px;
+    background-color: rgba(112, 146, 190,0.9);
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 100px;
+    padding: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    font-size: 1.2em;
+}
+
+#user{
+    border-bottom: 3px solid #555555;
+}
+
+#user span{
+    display: block;
+    text-align:center;
+    padding: 24px 16px;
+}
+
+li a {
+display: block;
+color: #000;
+padding: 8px 16px;
+text-decoration: none;
+}
+
+li a.active {
+background-color: #555;
+color: white;
+}
+
+li a:hover:not(.active) {
+background-color: #555;
+color: white;
+}
+
+/*span*/
+#lemieplaylist{
+    font-size: 2.2em;
+    font-weight: bolder;
+}
+
+/*article*/
+article{
+    top: 130px;
+    margin-left:300px;
+    max-width: calc(100%-300px);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding: 10px;
+    position:relative;
+    margin-bottom: 100px;
+}
+
+/*section 1 (tutte le playlist)*/
+
+/*ogni playlist*/
+.div_playlist_songs{
+    background-color: rgba(85,85,85,0.2);
+    border-radius: 10px;
+    width: 700px;
+}
+
+.div_playlist_songs, #add_playist{
+    padding: 10px;
+    border: 3px solid #555555;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*div info playlist*/
+.div_playlist{
+    display: flex;
+    margin: 4px;
+}
+
+
+/*immagine playlist*/
+.preview_pic{
+    background-color: #7092BE;
+    border-radius: 10px;
+    height: 200px;
+}
+
+.preview_pic img{
+    border-radius: 10px;
+    height: 200px;
+}
+
+.modify{
+    max-width: 20px;
+}
+
+/*nome ed elimina*/
+.info_delete{
+    padding: 5px;
+    padding-left: 20px;
+    display:flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nome_playlist{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+
+.recycle-bin_div{
+    width : 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.recycle-bin{
+    display: block;
+    max-width: 25px;
+    max-height: 25px;
+}
+
+.preview_pic img, .nome_playlist, .recycle-bin, .div_song{
+    cursor: pointer;
+}
+
+/*separator*/
+.separator{
+    margin-top: 10px;
+    width: 95%;
+    border: 1px solid gray;
+    border-radius: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*canzoni della playlist*/
+.div_songs {
+    border-radius: 10px;
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    margin-top:10px;
+    display: none;
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+.div_song{
+    background-color: #abcdef;
+    width: 30%;
+    border-radius: 10px;
+    padding:10px;
+    word-wrap: break-word;
+    margin: 1px;
+}
+
+.div_song img {
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 10px;
+}
+
+.song_name{
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 5px;
+    font-weight: bolder;
+    background-color: #666666;
+    color: white;
+}
+
+
+#songPreview{
+    max-width: 100px;
+}
+
+#delete{
+    margin-left: 10px;
+    position: absolute;
+    color:red;
+    cursor : pointer;
+}
+
+/*nessuna canzone nella playlist*/
+.nessuna_canzone{
+    margin-left: 10px;
+    font-weight: bolder;
+}
+
+/*overlay canzone*/
+
+.overlay_div{
+    cursor: default;
+}
+
+.overlay_div img{
+    height: 450px;
+    width: 450px;
+}
+
+.info_delete_song{
+    padding: 5px;
+    padding-left: 10px;
+    width:500px;
+}
+
+.songOverlay{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.song_preview, .not_avaliable{
+    margin-bottom: 10px;
+}
+
+.not_avaliable{
+    border-radius: 50px;
+    width: 250px;
+    text-align:center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: red;
+    padding: 13px;
+    background-color: rgb(255, 215, 215);
+}
+
+.overlay_div a{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.songDelete{
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+}
+
+
+/*section 2 (+ button)*/
+#add_playlist{
+    border: 3px solid #555555;
+    cursor: pointer;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: auto;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+
+
+/*overlay*/
+#overlay, .overlay_info{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(189, 174, 174, 0.3);
+    z-index: 1;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+#p_add{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.overlay_div{
+    background-color: #7092BE;
+    z-index: 2;
+    border: 4px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+input, button{
+    padding: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    border-radius: 7px;
+}
+
+button{
+    background-color: #807C7C;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.hidden{
+    display: none;
+}
+
+.show_block{
+    display: block;
+}
+
+.show_flex{
+    display: flex;
+}
+
+@media (max-width: 1100px){
+
+    header{
+        position:relative;
+        z-index:unset;
+    }
+
+    header img{
+        max-height:100px;
+        padding-left:unset;
+    }
+
+    nav{
+        position: relative;
+        width: 100%;
+        height: unset;
+    }
+
+    ul {
+        margin-top: unset;
+        text-align: center;
+    }
+
+    article{
+        top: unset;
+        margin-left:unset;
+    }
+}

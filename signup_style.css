@@ -1,0 +1,137 @@
+body{
+    margin: auto;
+}
+
+/*header*/
+header{
+    height:100px;
+    background-color: #7092BE;
+    margin-bottom: 100px;
+}
+
+img{
+    max-height:100px;
+}
+
+/*form di registrazione*/
+main{
+    font-family: 'Rubik', sans-serif;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+#titolo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 2.2em;
+}
+
+#signup{
+    border: 3px solid rgb(69, 138, 230);
+    background-color: rgb(192, 211, 236);
+    margin:auto;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+label{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.3em;
+    font-weight: bolder;
+}
+
+.credenziali{
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 300px;
+    margin-left: 3em;
+}
+
+#select{
+    width: 316px;
+}
+
+option:first{
+    color: #aaa;
+}
+
+#send{
+    align-content: center;
+    background-color: #7092BE;
+    border: none;
+    border-radius: 7px;
+    width: 100%;
+    color: white;
+    padding: 8px;
+    font-size: 16px;
+}
+
+#send:hover{
+    cursor: pointer;
+    background-color: rgb(152, 182, 221);
+}
+
+#send:disabled{
+    cursor: initial;
+    background-color: rgb(152, 182, 221);
+}
+
+#problems{
+    margin: 0;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgb(240, 158, 158);
+    color: red;
+}
+
+/*login*/
+#login{
+    margin-top: 0.3em;
+    text-align: right;
+    font-weight: bold;
+}
+
+a{
+    color: rgb(152, 182, 221);
+    text-decoration: none;
+    font-style: italic;
+}
+
+a:visited{
+    color: rgb(152, 182, 221);
+}
+
+/*modificatori*/
+.normal{
+    background-color: initial;
+}
+
+.no{
+    background-color: rgba(243, 116, 116,0.7);
+}
+
+.ok{
+    background-color: rgba(27, 218, 27, 0.7);
+}
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+label img{
+    max-width: 20px;
+    max-height:  20px;
+}
+

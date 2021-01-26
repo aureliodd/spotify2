@@ -1,0 +1,280 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin:auto;
+}
+
+/*header*/
+header{
+    width:100%;
+    position: fixed;
+    background-color: #7092BE;
+    z-index: 1;
+}
+
+header img{
+    max-height:100px;
+    padding-left:300px;
+}
+
+/*navbar*/
+nav{
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100%;
+    width:300px;
+    background-color: rgba(112, 146, 190,0.9);
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 100px;
+    padding: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    font-size: 1.2em;
+}
+
+#user{
+    border-bottom: 3px solid #555555;
+}
+
+#user span{
+    display: block;
+    text-align:center;
+    padding: 24px 16px;
+}
+
+li a {
+display: block;
+color: #000;
+padding: 8px 16px;
+text-decoration: none;
+}
+
+li a.active {
+background-color: #555;
+color: white;
+}
+
+li a:hover:not(.active) {
+background-color: #555;
+color: white;
+}
+
+/*article (e search bar)*/
+article{
+    top:130px;
+    margin-left:300px;
+    max-width: calc(100%-300px);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    position:relative;
+}
+
+#search{
+    background-color: #555555;
+    border-radius: 10px;
+    border: 3px solid grey;
+    padding: 20px;
+}
+
+#text_to_search{
+    width:300px;
+}
+
+#text_to_search, #type_search, #search-button{
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 7px;
+}
+
+#search-button{
+    background-color: #7092BE;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/*sezioni dell'article*/
+#resultSection{
+    width: 900px;
+    flex-wrap: wrap;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.div_result{
+    background-color: #abcdef;
+    width: 30%;
+    border-radius: 10px;
+    padding:5px;
+    margin: 5px;
+}
+
+.div_result img {
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 10px;
+}
+
+.songName{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    padding: 7px;
+    border-radius: 5px;
+    font-weight: bolder;
+    background-color: #666666;
+    color: white;
+}
+
+.infosong{
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: 7px;
+}
+
+.linkSpotify{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.song_preview{
+    width: 100%;
+}
+
+.not_avaliable{
+    border-radius: 50px;
+    text-align:center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: red;
+    padding: 13px;
+    background-color: rgb(255, 215, 215);
+}
+
+
+
+/*dropdown button*/
+
+.divadd{
+}
+
+.drop_button, .dropped_button{
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+}
+
+.drop_button{
+    background-color: #7092BE;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.drop_button:hover, .drop_button:focus{
+    color: white;
+    background-color: rgb(176, 204, 241);
+}
+
+.dropped_div{
+    position:absolute;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.dropped_button{
+    position:relative;
+    display: block;
+    background-color: #666666;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dropped_button:hover{
+    background-color: rgb(119, 118, 122);
+}
+
+/*visibilità*/
+.visible{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+@media (max-width: 1200px){
+
+    header{
+        position:relative;
+        z-index:unset;
+    }
+
+    header img{
+        max-height:100px;
+        padding-left:unset;
+    }
+
+    nav{
+        position: relative;
+        width: 100%;
+        height: unset;
+    }
+
+    ul {
+        margin-top: unset;
+    }
+
+    article{
+        top: unset;
+        margin-left:unset;
+    }
+}
+
+#lemieplaylist{
+    font-weight: bolder;
+    font-size: 2em; 
+}
+
+/*show*/
+
+.hidden{
+    display: none;
+}
+.show_flex{
+    display:flex;
+}
+
+/*overlay*/
+#overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(189, 174, 174, 0.3);
+    z-index: 1;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.overlay_div{
+    background-color: #7092BE;
+    z-index: 2;
+    border: 4px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 3rem;
+}
